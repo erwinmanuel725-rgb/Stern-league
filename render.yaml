@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: Erwin-Bot
+    env: docker
+    plan: free
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OWNER_NUMBER
+        sync: false
+      - key: OWNER_IDS
+        sync: false
+      - key: PREFIX
+        value: "-"
+      - key: SESSION_DATA
+        sync: false
+      - key: OPENWEATHER_API_KEY
+        sync: false
+      - key: OMDB_API_KEY
+        sync: false
+      - key: NEWSAPI_KEY
+        sync: false
+      - key: RENDER_API_KEY
+        sync: false
+      - key: RENDER_SERVICE_ID
+        sync: false
