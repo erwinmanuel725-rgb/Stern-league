@@ -1,4 +1,4 @@
-FROM node:20-bullseye-slim
+FROM node:20-bookworm-slim
 
 # Install Python and dependencies for yt-dlp
 RUN apt-get update && \
